@@ -23,7 +23,7 @@ public class LongResponse {
         Console sncl = System.console();
     
     if(sncl == null) {
-        System.out.println("No console");
+        System.out.println("No console to use");
         return;
     }
         String vAQuote = "My territory, MY RULES!";
