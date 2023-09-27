@@ -30,7 +30,11 @@ public class LongResponse {
         String raString = cnsl.readLine("Your answer: ");
         System.out.println(raString + " says, " + vAQuote + " in Valorant! :D");
 
-
+        Console icsl = System.console();
+    if(icsl == null) {
+        System.out.println("No number available");
+        return;
+    }
 
         
     /*This comment will not be deleted, for as it is a placemarker for my laptop coding process
