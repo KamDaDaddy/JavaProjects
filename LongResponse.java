@@ -35,7 +35,9 @@ public class LongResponse {
         String raString = sncl.readLine("Your answer: ");
         System.out.println(raString + " says, " + vAQuote + " in Valorant! :D");
         
-    //this is a drill do not attempt to recreate
+    /*This comment will not be deleted, for as it is a placemarker for my laptop coding process
+        Remember to always save and push on github so that you can have the same code ![(BOZO)]!
+    */
         
             
         
