@@ -1,7 +1,7 @@
 public class playground {
     public static void main(String[] args) 
     {
-        /*
+
         double num = 813 % 100 / 3 + 2.4;
         System.out.println(num);
 
@@ -48,7 +48,7 @@ public class playground {
         example = example * 3;
         
         System.out.println(example);
-        */
+        
 
         int var1;
         int var2;
@@ -92,6 +92,8 @@ public class playground {
         two = "house";
         both = one + two;
         System.out.println(both);
-
+        
+    
+    
     }
 }
