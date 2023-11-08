@@ -1,4 +1,5 @@
 public class playground {
+<<<<<<< Updated upstream
     public static void main(String[] args) 
     {
 
@@ -94,6 +95,10 @@ public class playground {
         System.out.println(both);
         
     
+=======
+    public static void main(String[] args) {
+        
+>>>>>>> Stashed changes
     
     }
 }
