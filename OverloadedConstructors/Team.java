@@ -6,11 +6,17 @@ public class Team {
     String homeState;
     Boolean activeStatus;
 
-    public Team(String name, String homeString) {
-        this.name = name;
-        this.homeState = homeState;
+    public Team(String n, String homeS) {
+        name = n;
+        homeState = homeS;
         System.out.println("Debug.Log :)");
     }
 
+    public Team(String n, String homeS, boolean aS)
+    {
+        name = n;
+        homeState = homeS;
+        activeStatus = aS;
+    }
 
 }
