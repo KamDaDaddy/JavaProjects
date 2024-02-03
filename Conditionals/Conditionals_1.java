@@ -1,7 +1,8 @@
+package Conditionals;
 import java.io.Console;
 import java.util.Scanner;
 
-public class Conditionals {
+public class Conditionals_1 {
     //Use scanner for numbers, console for string
         static int num1;
         static int correctNumber = 25;
