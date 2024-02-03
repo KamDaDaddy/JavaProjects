@@ -7,6 +7,8 @@ public class Conditionals {
         static int correctNumber = 25;
         static int negatedNum;
         static String weekDay;
+        static String password = "abc123";
+        static String userEnter;
         
         
         //Problem 1
@@ -50,24 +52,38 @@ public class Conditionals {
             }
         }
 
-        //Problem 4
+        //Problem 4 & 5
         public static void WeekDays(){
-            if(weekDay == "Monday"){
+            if(weekDay.equals("Monday")){
                 System.out.println("This is the 1st day of the week.");
             }
-            else if(weekDay == "Tuesday"){
+            else if(weekDay.equals("Tuesday")){
                 System.out.println("This is the 2nd day of the week.");
             }
-            else if(weekDay == "Wednesday"){
+            else if(weekDay.equals("Wednesday")){
                 System.out.println("This is the 3rd day of the week.");
             }
-            else if(weekDay == "Thursday"){
+            else if(weekDay.equals("Thursday")){
                 System.out.println("This is the 4th day of the week.");
             }
-            else if(weekDay == "Friday"){
+            else if(weekDay.equals("Friday")){
                 System.out.println("This is the 5th day of the week.");
             }
+            else {
+                System.out.println("Invalid Day, Please try again");
+            }
         }
+        
+        //Problem 6
+        public static void PasswordChecker(){
+            if(password.length() >= 5){
+                System.out.println("Your Code is Valid!");
+            }
+            else{
+                System.out.println("Your Code is Invalid, Please Try Again.");
+            }
+        }
+        
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             Console con = System.console();
@@ -98,14 +114,17 @@ public class Conditionals {
                 CursedTechniqueNumberNegation();
             System.out.println(" ");
     
-            //Problem 4
-            System.out.println("_4th Question_");
+            //Problem 4 & 5
+            System.out.println("_4th Question");
                 weekDay = con.readLine("Please enter a day of the week: ");
                 WeekDays();
             System.out.println(" ");
     
-    
-    
+            //Problem 6
+            System.out.println("_6th Question_");
+                userEnter = con.readLine("Please enter your code: ");
+                PasswordChecker();
+            System.out.println(" ");
     
     
     }
