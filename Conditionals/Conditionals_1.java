@@ -1,7 +1,7 @@
 import java.io.Console;
 import java.util.Scanner;
 
-public class Conditionals {
+public class Conditionals_1 {
     //Use scanner for numbers, console for string
         static int num1;
         static int correctNumber = 25;
@@ -74,11 +74,15 @@ public class Conditionals {
         }
         
         public static void PasswordChecker(){
-            if(password) {
-                
+            if(password.length() <= 5) {
+                System.out.println("Your Code is Invalid");
+            }
+            else {
+                System.out.println("Your Code is Valid");
             }
         }
         
+        @SuppressWarnings("resource")
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             Console con = System.console();
@@ -92,7 +96,6 @@ public class Conditionals {
             System.out.println("_1st Question_");
             System.out.print("Please enter a number: ");
                 num1 = sc.nextInt();
-                MathSigns();
             System.out.println(" ");
     
             //Problem 2
@@ -118,9 +121,10 @@ public class Conditionals {
             //Problem 6
             System.out.println("_6th Question_");
             System.out.print("Please enter your code: ");
-            
+                password = con.readLine();
+                PasswordChecker();
 
-    
+    sc.close();
     
     
     }

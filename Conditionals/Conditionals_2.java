@@ -1,17 +1,12 @@
-package Conditionals;
 
 public class Conditionals_2 {
-    public static String status;
 
     public static String checkAgeForPermit(int age){
-        if(age <= 13){
+        if(age < 16){
             return "Invalid";
         }
-        else if(age >= 16){
-            return "Valid";
-        }
         else {
-            return "Some other status";
+            return "Valid";
         }
     }
 
@@ -32,7 +27,7 @@ public class Conditionals_2 {
 
     public static void main(String[] args) {
         int age = 13;
-        status = checkAgeForPermit(age);
+        String status = checkAgeForPermit(age);
         System.out.println("User is " + status);
 
         age = 16;
