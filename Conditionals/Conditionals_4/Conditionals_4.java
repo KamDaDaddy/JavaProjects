@@ -8,5 +8,10 @@ public class Conditionals_4 {
 
         Character person4 = person1;
         Character person5 = person2;
+    
+    
+        if()
+    
+    
     }
 }
