@@ -38,26 +38,51 @@ public class Loop_2 {
         num2 = scanner.nextInt();
 
         System.out.println("Print even or odd: ");
+        userInput = scanner.nextLine();
 
-        if(num1 % 2 == 0){
-            System.out.println(num1);
-        }
-    
-        int current = num1 + (num1 % 2 == 0 ? 2 : 1);
+        if(userInput.equals("even")){
         
-        while (current < num2) {
+            if(num1 % 2 == 0){
+                System.out.println(num1);
+            }
+    
+            int current = num1 + (num1 % 2 == 0 ? 2 : 1);
+        
+            while (current < num2) {
             if(current % 2 == 0){
                 System.out.print(current + " ");
             }
         
             current += 2;
+            }
+    
+            if (num2 % 2 == 0) {
+                System.out.print(num2);
+            }
         }
+        else if(userInput.equals("odd")){
+            if (num1 % 2 == 1) {
+                System.out.println(num1);
+            }
+        
+            int current = num1 + (num1 % 2 == 0 ? 2 : 1);
+        
+            while (current < num2) {
+            if(current % 2 == 0){
+                System.out.print(current + " ");
+            }
+        
+            current += 2;
+            }
     
-        if (num2 % 2 == 0) {
-            System.out.print(num2);
+            if (num2 % 2 == 0) {
+                System.out.print(num2);
+            }
+        
+        
         }
-    
-    
+
+
     scanner.close();
     }
 
