@@ -36,8 +36,9 @@ public class Loop_2 {
         System.out.println("Enter two numbers: ");
         num1 = scanner.nextInt();
         num2 = scanner.nextInt();
+        System.out.println(" ");
 
-        System.out.println("Print even or odd: ");
+        System.out.print("Print even or odd: ");
         userInput = scanner.nextLine();
 
         if(userInput.equals("even")){
@@ -68,14 +69,14 @@ public class Loop_2 {
             int current = num1 + (num1 % 2 == 0 ? 2 : 1);
         
             while (current < num2) {
-            if(current % 2 == 0){
+            if(current % 2 == 1){
                 System.out.print(current + " ");
             }
         
-            current += 2;
+            current += 3;
             }
     
-            if (num2 % 2 == 0) {
+            if (num2 % 2 == 1) {
                 System.out.print(num2);
             }
         
