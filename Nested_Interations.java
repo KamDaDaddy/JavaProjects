@@ -13,14 +13,16 @@ public class Nested_Interations {
         */
     
         //B. 
+        String asterisks = "*******";
+
+        
+        
         for(int stair = 0; stair < 7; stair++){
             System.out.println("");
 
-            for(int asterisks = 7; asterisks >= 1; asterisks--){
-                System.out.print("*");
-            
+            for(int n = 7; n >= 1; n--){
+                System.out.print(asterisks.substring(1));
             }
-            
         }
     
     
