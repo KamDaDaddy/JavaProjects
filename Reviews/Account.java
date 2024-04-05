@@ -3,10 +3,22 @@ package Reviews;
 public class Account {
     private String username;
     private String passwordString;
+    final int accountNumber;
 
     //Initializes the citiAccount
     public Account(){
+        this.accountNumber = 0;
         System.out.println("The Object Has Been Initialized");
+    }
+
+    public Account(int accountNumber){
+        this.accountNumber = accountNumber;
+        System.out.println("The Object Has Been Initialized");
+    }
+    
+    public Account(int accountNumber, String user){
+        this.accountNumber = accountNumber;
+        this.username = user;
     }
 
     //Initializes the password string to the parameter
@@ -18,8 +30,23 @@ public class Account {
     public String getPassword(){
         return passwordString;
     }
-
-    public String toString(){
-        return ("Password is: " + passwordString);
+    
+    //Returns account number
+    public int getAccountNum(){
+        return accountNumber;
     }
+
+    public String getUsername(){
+        return username;
+    }
+    
+    
+    
+    public String toString(){
+        return ("The " + accountNumber + " is for " + username + " and the password is " + passwordString);
+    }
+    
+
+
+
 }
