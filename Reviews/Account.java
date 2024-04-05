@@ -4,6 +4,8 @@ public class Account {
     private String username;
     private String passwordString;
     final int accountNumber;
+    
+    private static int countAccounts = 0;
 
     //Initializes the citiAccount
     public Account(){
@@ -40,7 +42,14 @@ public class Account {
         return username;
     }
     
-    
+    public boolean validatePasswordLength(String password){
+        if(password.length() >= 8){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     
     public String toString(){
         return ("The " + accountNumber + " is for " + username + " and the password is " + passwordString);
